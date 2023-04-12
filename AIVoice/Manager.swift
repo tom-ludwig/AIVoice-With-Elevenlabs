@@ -4,7 +4,6 @@
 //
 //  Created by Tommy Ludwig on 12.04.23.
 //
-// MARK: 83572ac07e9d1f4e9d53574e17ba2906
 
 import Foundation
 import SwiftUI
@@ -54,10 +53,6 @@ class Manager: ObservableObject {
             print("Invalid URL")
             return
         }
-//        guard let header = "83572ac07e9d1f4e9d53574e17ba2906".data(using: .utf8) else {
-//            print("Invalid header")
-//            return
-//        }
         let request: [String : Any] = [
             "text": "\(text)",
             "voice_settings": [
