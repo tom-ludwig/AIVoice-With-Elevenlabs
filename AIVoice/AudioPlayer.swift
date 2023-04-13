@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 
 struct AudioPlayer: View {
-    let data: Data?
+    @State var data: Data?
     @State var audioPlayer: AVAudioPlayer?
     var body: some View {
         VStack {

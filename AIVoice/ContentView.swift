@@ -20,6 +20,25 @@ struct ContentView: View {
                 Section {
                     if manager.audioData != nil {
                         AudioPlayer(data: manager.audioData)
+                            .id(manager.audioData)
+                            .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                Button {
+                                    withAnimation() {
+                                        self.manager.audioData = nil
+                                    }
+                                } label: {
+                                    Image(systemName: "trash")
+                                        .font(.title)
+                                }.tint(.red)
+                            }
+                            .swipeActions(edge: .leading, allowsFullSwipe: true) {
+                                Button {
+                                    // do something
+                                } label: {
+                                    Image(systemName: "square.and.arrow.down")
+                                        .font(.title)
+                                }.tint(.gray)
+                            }
                     }
                 }
                 Section {

@@ -16,11 +16,14 @@ struct SettingsView: View {
                 HStack {
                     Text("Current API-KEY: ")
                     Text(settings.apiKey)
-                        .font(.system(size: 20, weight: .medium, design: .monospaced))
                         .foregroundColor(.secondary)
                 }
+                .font(.caption2)
+                .fontDesign(.monospaced)
+                
                 TextField("API-Key", text: $apikey)
                     .textFieldStyle(.roundedBorder)
+                
                 HStack {
                     Text("**IMPORTNAT:**")
                     Text("Please restart the application after saving the api-key.")
@@ -34,6 +37,13 @@ struct SettingsView: View {
                     Text("Save")
                         .fontDesign(.monospaced)
                 }.buttonStyle(.bordered).tint(.indigo)
+                
+                Spacer()
+                
+                Text("All creadit to the generated voice goes to ElevenLabs Inc©.")
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .fontDesign(.monospaced)
             }
             .padding()
             .navigationTitle("Settings")
