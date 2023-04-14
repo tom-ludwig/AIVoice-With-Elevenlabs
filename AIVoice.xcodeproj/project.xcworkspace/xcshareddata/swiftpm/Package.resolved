@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "dswaveformimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dmrschmidt/DSWaveformImage.git",
+      "state" : {
+        "revision" : "f46cf0626b5abcb6ed2eb47b554dd5e31ee18d35",
+        "version" : "12.0.1"
+      }
+    },
+    {
+      "identity" : "waveform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pixlwave/Waveform",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f8c7066bbdd08db84817e8be9b19534b03fdd913"
+      }
+    }
+  ],
+  "version" : 2
+}

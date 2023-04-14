@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61155D3129E827B100FBFD4E /* Waveform in Frameworks */ = {isa = PBXBuildFile; productRef = 61155D3029E827B100FBFD4E /* Waveform */; };
+		61155D3429E82B9600FBFD4E /* DSWaveformImage in Frameworks */ = {isa = PBXBuildFile; productRef = 61155D3329E82B9600FBFD4E /* DSWaveformImage */; };
+		61155D3629E82B9600FBFD4E /* DSWaveformImageViews in Frameworks */ = {isa = PBXBuildFile; productRef = 61155D3529E82B9600FBFD4E /* DSWaveformImageViews */; };
 		614A118429E6B1D700F21BAE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A118329E6B1D700F21BAE /* ListView.swift */; };
 		614A118629E6B1E600F21BAE /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A118529E6B1E600F21BAE /* Manager.swift */; };
 		614A118829E6BAF700F21BAE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A118729E6BAF700F21BAE /* Settings.swift */; };
@@ -40,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61155D3629E82B9600FBFD4E /* DSWaveformImageViews in Frameworks */,
+				61155D3429E82B9600FBFD4E /* DSWaveformImage in Frameworks */,
+				61155D3129E827B100FBFD4E /* Waveform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +110,11 @@
 			dependencies = (
 			);
 			name = AIVoice;
+			packageProductDependencies = (
+				61155D3029E827B100FBFD4E /* Waveform */,
+				61155D3329E82B9600FBFD4E /* DSWaveformImage */,
+				61155D3529E82B9600FBFD4E /* DSWaveformImageViews */,
+			);
 			productName = AIVoice;
 			productReference = 61D08B7729E5C7B3000789F2 /* AIVoice.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +143,10 @@
 				Base,
 			);
 			mainGroup = 61D08B6E29E5C7B3000789F2;
+			packageReferences = (
+				61155D2F29E827B100FBFD4E /* XCRemoteSwiftPackageReference "Waveform" */,
+				61155D3229E82B9600FBFD4E /* XCRemoteSwiftPackageReference "DSWaveformImage" */,
+			);
 			productRefGroup = 61D08B7829E5C7B3000789F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -293,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AIVoice/Preview Content\"";
 				DEVELOPMENT_TEAM = 99CC62WXQ9;
 				ENABLE_PREVIEWS = YES;
@@ -322,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AIVoice/Preview Content\"";
 				DEVELOPMENT_TEAM = 99CC62WXQ9;
 				ENABLE_PREVIEWS = YES;
@@ -367,6 +382,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61155D2F29E827B100FBFD4E /* XCRemoteSwiftPackageReference "Waveform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pixlwave/Waveform";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		61155D3229E82B9600FBFD4E /* XCRemoteSwiftPackageReference "DSWaveformImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmrschmidt/DSWaveformImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61155D3029E827B100FBFD4E /* Waveform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61155D2F29E827B100FBFD4E /* XCRemoteSwiftPackageReference "Waveform" */;
+			productName = Waveform;
+		};
+		61155D3329E82B9600FBFD4E /* DSWaveformImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61155D3229E82B9600FBFD4E /* XCRemoteSwiftPackageReference "DSWaveformImage" */;
+			productName = DSWaveformImage;
+		};
+		61155D3529E82B9600FBFD4E /* DSWaveformImageViews */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61155D3229E82B9600FBFD4E /* XCRemoteSwiftPackageReference "DSWaveformImage" */;
+			productName = DSWaveformImageViews;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61D08B6F29E5C7B3000789F2 /* Project object */;
 }

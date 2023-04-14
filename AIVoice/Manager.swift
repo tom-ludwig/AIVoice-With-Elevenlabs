@@ -66,7 +66,7 @@ class Manager: ObservableObject {
         }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"
-        urlRequest.addValue("audio/mpeg", forHTTPHeaderField: "Accept")
+        urlRequest.addValue("audio/mp3", forHTTPHeaderField: "Accept")
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         urlRequest.addValue("\(settings.apiKey)", forHTTPHeaderField: "xi-api-key")
         urlRequest.httpBody = httpBody
