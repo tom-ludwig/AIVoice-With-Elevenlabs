@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class Manager: ObservableObject {
-    @Published var voices: Welcome? = nil
+    @Published var voices: ViewModel? = nil
     @Published var audioData: Data? = nil
     @ObservedObject var settings = SettingsClass(apiKey: "")
     
@@ -27,7 +27,7 @@ class Manager: ObservableObject {
             
             do {
                 let decoder = JSONDecoder()
-                let result = try decoder.decode(Welcome.self, from: data)
+                let result = try decoder.decode(ViewModel.self, from: data)
                 DispatchQueue.main.async {
                     self.voices = result
                 }
@@ -66,11 +66,11 @@ class Manager: ObservableObject {
         }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"
-        urlRequest.addValue("audio/mp3", forHTTPHeaderField: "Accept")
+        urlRequest.addValue("audio/m4a", forHTTPHeaderField: "Accept")
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         urlRequest.addValue("\(settings.apiKey)", forHTTPHeaderField: "xi-api-key")
         urlRequest.httpBody = httpBody
-        print("Done!")
+        
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard data != nil else { return }
             guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {

@@ -57,7 +57,7 @@ struct AudioPlayer: View {
             guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
                 return
             }
-            let fileURL = documentsDirectory.appendingPathComponent("audio.mp3")
+            let fileURL = documentsDirectory.appendingPathComponent("audio.m4a")
             do {
                 try data?.write(to: fileURL, options: .atomic)
                 print("Data succsesfully saved!")

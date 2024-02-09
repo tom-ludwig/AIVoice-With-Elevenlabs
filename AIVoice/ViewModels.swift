@@ -4,32 +4,12 @@
 //
 //  Created by Tommy Ludwig on 11.04.23.
 //
-/*
- init(from decoder: Decoder) throws {
-     let container = try decoder.container(keyedBy: CodingKeys.self)
-     self.id = try container.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
-     self.voiceID = try container.decode(String.self, forKey: .voiceID)
-     self.name = try container.decode(String.self, forKey: .name)
-     self.samples = try container.decode([Sample].self, forKey: .samples)
-     self.category = try container.decode(String.self, forKey: .category)
-     self.fineTuning = try container.decode(FineTuning.self, forKey: .fineTuning)
-     self.labels = try container.decode(Labels.self, forKey: .labels)
-     self.description = try container.decode(String.self, forKey: .description)
-     self.previewURL = try container.decode(String.self, forKey: .previewURL)
-     self.availableForTiers = try container.decode([String].self, forKey: .availableForTiers)
-     self.settings = try container.decode(Settings.self, forKey: .settings)
- }
- */
+
 import Foundation
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let welcome = try? JSONDecoder().decode(Welcome.self, from: jsonData)
-
-import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct ViewModel: Codable {
     let voices: [Voice]
 }
 

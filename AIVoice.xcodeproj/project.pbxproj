@@ -19,7 +19,6 @@
 		61D08B7F29E5C7B4000789F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D08B7E29E5C7B4000789F2 /* Assets.xcassets */; };
 		61D08B8229E5C7B4000789F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D08B8129E5C7B4000789F2 /* Preview Assets.xcassets */; };
 		61D08B8929E5C8B5000789F2 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D08B8829E5C8B5000789F2 /* ViewModels.swift */; };
-		61D08B8B29E69A47000789F2 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D08B8A29E69A47000789F2 /* AudioPlayerView.swift */; };
 		61D08B8D29E69AEC000789F2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D08B8C29E69AEC000789F2 /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		61D08B7E29E5C7B4000789F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61D08B8129E5C7B4000789F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		61D08B8829E5C8B5000789F2 /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
-		61D08B8A29E69A47000789F2 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 		61D08B8C29E69AEC000789F2 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +77,6 @@
 				614A118529E6B1E600F21BAE /* Manager.swift */,
 				614A118729E6BAF700F21BAE /* Settings.swift */,
 				61D08B8829E5C8B5000789F2 /* ViewModels.swift */,
-				61D08B8A29E69A47000789F2 /* AudioPlayerView.swift */,
 				61D08B7E29E5C7B4000789F2 /* Assets.xcassets */,
 				61D08B8029E5C7B4000789F2 /* Preview Content */,
 			);
@@ -180,7 +177,6 @@
 				614A118429E6B1D700F21BAE /* ListView.swift in Sources */,
 				614A118629E6B1E600F21BAE /* Manager.swift in Sources */,
 				61D08B8D29E69AEC000789F2 /* AudioPlayer.swift in Sources */,
-				61D08B8B29E69A47000789F2 /* AudioPlayerView.swift in Sources */,
 				61D08B7B29E5C7B3000789F2 /* AIVoiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
